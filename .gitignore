@@ -1,0 +1,18 @@
+# ESP-IDF build output & generated config
+build/
+sdkconfig
+sdkconfig.old
+dependencies.lock
+managed_components/
+
+# Local secrets (never commit)
+secrets.h
+*.local
+
+# Editor / OS
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+~$*

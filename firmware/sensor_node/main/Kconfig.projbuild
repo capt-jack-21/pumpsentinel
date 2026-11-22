@@ -1,0 +1,19 @@
+menu "PumpSentinel Sensor Node"
+
+    config PUMPSENTINEL_WIFI_SSID
+        string "WiFi SSID"
+        default "YOUR_WIFI_SSID"
+        help
+            WiFi network the sensor node joins to send the stall alert.
+
+    config PUMPSENTINEL_WIFI_PASSWORD
+        string "WiFi password"
+        default "YOUR_WIFI_PASSWORD"
+
+    config PUMPSENTINEL_STALL_WEBHOOK_URL
+        string "Stall alert webhook URL"
+        default "https://your-n8n-host.example.com/webhook/pumpsentinel-stall"
+        help
+            HTTPS endpoint (e.g. an n8n webhook) that receives the rotor-stall alert.
+
+endmenu

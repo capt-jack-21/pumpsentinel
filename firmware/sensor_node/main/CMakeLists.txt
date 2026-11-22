@@ -1,0 +1,20 @@
+idf_component_register(
+    SRCS 
+        "main.c"
+        "ring_buffer.c"
+        "system_state.c"
+        "adc_sampling.c"
+        "feature_extraction.c"
+        "detection_engine.c"
+        "http_alert.c"
+        "alert_manager.c"
+        "espnow_tx.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        esp_adc
+        esp_wifi
+        nvs_flash
+        freertos
+        esp_timer
+        esp_netif
+        esp_event)
